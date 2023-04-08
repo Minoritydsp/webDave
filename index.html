@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Judul Halaman</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>DusDaveBro.com</h1>
+      <nav>
+        <ul>
+          <li><a href="Rekan.html">Rekan</a></li>
+          <li><a href="#">Bisnis</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Selamat Datang</h2>
+        <p id="sapa"></p>
+        <script>
+          let namaPengunjung = prompt("Halo, siapa namamu?");
+          if (namaPengunjung != null) {
+            document.getElementById("sapa").innerHTML =
+              "Halo, " +
+              namaPengunjung +
+              "! Selamat datang di halaman web kami.";
+          }
+        </script>
+      </section>
+
+      <section>
+        <h2>Selamat Datang di Halaman Beranda Kami!</h2>
+        <p>Klik tombol di bawah ini untuk melihat layanan yang kami tawarkan.</p>
+        <button id="layananBtn">Layanan Kami</button>
+      </section>
+    
+    </main>
+      <aside>
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="Rekan.html">Beranda</a></li>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+        <div class="aside-image">
+          <img src="hey.jpg" alt="Call ME Baybeh" />
+        </div>
+        <div class="aside-text">
+          <h3>Artikel Populer</h3>
+          <ul>
+            <li><a href="#">10 Tips Sukses Menjadi Entrepreneur</a></li>
+            <li><a href="#">Cara Memulai Bisnis Online dengan Modal Kecil</a></li>
+            <li><a href="#">Inovasi Bisnis di Era Digital</a></li>
+          </ul>
+        </div>
+      </aside>
+      
+    
+    
+    <script>
+      const layananBtn = document.getElementById("layananBtn");
+    
+      layananBtn.addEventListener("click", function() {
+        alert("Layanan yang kami tawarkan antara lain: pembuatan website, mobile app development, dan digital marketing.");
+      });
+    </script>
+
+      <section>
+        <div class="article">
+          <h2>Tentang kami</h2>
+          <h3>Dave - Your One-Stop Destination for Digital Solutions</h3>
+          <h4>==========================</h4>
+          <p>
+            At Dave, we're dedicated to delivering innovative and effective
+            digital solutions that meet your unique needs. With our expert team
+            of developers and designers, we create customized websites and
+            applications that reflect your brand and help you reach your
+            business goals. Our focus is on providing a seamless user experience
+            that engages and converts your audience. From responsive web design
+            to mobile app development, we offer a wide range of services that
+            are designed to elevate your online presence and drive success.
+            Whether you're a small business owner, an entrepreneur, or a large
+            corporation, we have the skills and expertise to help you succeed in
+            the digital world. Let Dave be your one-stop destination for all
+            your digital needs.
+          </p>
+        </div>
+        <div class="image">
+          <img src="dev DISKO.jpg" alt="Gambar Digital Solutions" />
+        </div>
+        <p>...</p>
+      </section>
+
+      <section>
+        <h2>Masuk</h2>
+        <form>
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+          /><br /><br />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+          /><br /><br />
+          <input type="submit" value="Masuk" />
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Halaman Web Kami</p>
+    </footer>
+  </body>
+</html>
